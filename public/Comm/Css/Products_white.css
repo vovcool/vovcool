@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{    background-color: #ffffff;}
+
+.main {
+  margin: 0 auto;
+}
+
+.navgoback {
+  width: 8.5rem;
+  height: 1.4rem;
+  position: fixed;
+  bottom: 0px;
+  display: inline-flex;
+  justify-content: center;
+}
+.navgoback a {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../Svg/GoBackHover.svg) center center no-repeat;
+  background-size:contain;
+}
+.navgoback a:hover {
+  background: url(../Svg/GoBack.svg) no-repeat;
+  background-size:contain;
+}
+
+
+/*PC*/
+@media only screen and (min-width: 1025px) {
+  #main,.navgoback{ margin: 0 auto; width: 850px; }
+}
+
+/*±Ê¼Ç±¾*/
+@media (min-width: 768px) and (max-width: 1024px) {
+   #main,.navgoback{ margin: 0 auto; width: 850px; }
+}
+
+/*Æ½°å*/
+@media (min-width: 481px) and (max-width: 767px) {
+  #main,{ margin: 0 auto; width: 8.5rem; }
+}
+/*ÊÖ»ú*/
+@media (max-width: 480px) {
+   #main,{ margin: 0 auto; width: 8.5rem; }
+}
